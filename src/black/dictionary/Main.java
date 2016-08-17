@@ -1,6 +1,6 @@
 package black.dictionary;
 
-import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.layout.RowLayout;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
@@ -13,10 +13,7 @@ public class Main {
 		Shell shell = new Shell(display);
 
 		shell.setSize(450, 300);
-		GridLayout gridLayout = new GridLayout();
-		gridLayout.numColumns = 3;
-		shell.setLayout(gridLayout);
-
+		shell.setLayout(new RowLayout());
 		Form form = new Form(shell);
 		form.createForm();
 		shell.open();
