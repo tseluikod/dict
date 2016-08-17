@@ -2,10 +2,22 @@ package black.dictionary;
 
 public class Word {
 	
-	String word;
-	String translation;
+	private String word;
+	private String translation;
 	
-	public static void Main(String[] args) {
-		
+	public String getWord() {
+		return this.word;
 	}
-}
+	
+	public void setWord(String word) {
+		 this.word = word;
+	}
+	
+	public String getTranslation() {
+		return this.translation;
+	}
+	
+	public void setTranslation(String translation) {
+		 this.translation = translation;
+	}
+} 
